@@ -17,13 +17,13 @@ export default function InfiniteList(props) {
   } = props;
 
   return (
-    <div
+    <ul
       className={className}
       style={{ height: containerHeight, overflowY: 'scroll' }}
       onScroll={onScroll(isLoading, isEndReach, threshold, onThresholdReach)}
     >
       {children}
-    </div>
+    </ul>
   );
 }
 
